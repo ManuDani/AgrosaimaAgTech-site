@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agrosaima SAS – Tropical Aeroponics Toolkit</title>
+  <meta name="description" content="Tropical Aeroponics Toolkit – Consistent, Export-Ready, Climate-Smart Agriculture from Colombia." />
+  <meta property="og:title" content="Agrosaima SAS – Tropical Aeroponics Toolkit" />
+  <meta property="og:description" content="Consistent, export‑ready, climate‑smart production using rainwater and solar energy in Colombia's coffee region." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="agrosaima-invernadero.jpg" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1211;
+      --card: #0e1a19;
+      --fg: #e7f6f3;
+      --muted: #a7c4bd;
+      --accent: #22c55e;
+      --brand: #0ea5a4;
+      --brand-2: #0891b2;
+      --shadow: 0 10px 40px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 70% -10%, rgba(34,197,94,.12), transparent 60%),
+                  radial-gradient(800px 400px at -10% 10%, rgba(14,165,233,.12), transparent 60%),
+                  var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    .container { width: min(1100px, 92vw); margin: 0 auto; padding: 24px; }
+    header.hero {
+      padding: clamp(48px, 10vw, 96px) 0 48px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #032a28;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      box-shadow: var(--shadow);
+    }
+    h1 {
+      font-size: clamp(28px, 6vw, 48px);
+      margin: 16px 0 12px;
+      line-height: 1.15;
+      font-weight: 800;
+    }
+    .sub {
+      font-size: clamp(16px, 2.8vw, 20px);
+      color: var(--muted);
+      max-width: 840px;
+      margin: 0 auto 28px;
+    }
+    .cta {
+      display: inline-flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .06s ease, box-shadow .2s ease, opacity .2s;
+      box-shadow: var(--shadow);
+    }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #032a28; }
+    .btn.secondary { background: #132220; color: var(--fg); border: 1px solid #14423d; }
+    .btn:hover { transform: translateY(-2px); }
+    section.card {
+      background: #0e1a19;
+      border: 1px solid #16322e;
+      border-radius: var(--radius);
+      padding: clamp(20px, 3vw, 28px);
+      margin: 18px 0;
+      box-shadow: var(--shadow);
+    }
+    h2 { margin: 0 0 10px; font-size: clamp(22px, 3.6vw, 28px); }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    @media (min-width: 900px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+      .grid.three { grid-template-columns: repeat(3, 1fr); }
+    }
+    .kv {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 24px;
+      align-items: center;
+    }
+    @media (max-width: 800px) { .kv { grid-template-columns: 1fr; } }
+    .card ul { padding-left: 18px; margin: 6px 0; }
+    .pill {
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid #1a3b36;
+      border-radius:999px;
+      color: var(--muted);
+      margin: 4px 6px 0 0;
+      font-size: 13px;
+    }
+    footer {
+      padding: 32px 0 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a { color: #7dd3fc; }
+    .imgwrap {
+      overflow: hidden; border-radius: 14px; border:1px solid #173833;
+      box-shadow: var(--shadow);
+    }
+    .imgwrap img { display:block; width:100%; height:auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="badge">Agrosaima SAS</div>
+      <h1>Tropical Aeroponics Toolkit</h1>
+      <p class="sub">
+        Consistent, export‑ready, climate‑smart production in Colombia’s coffee region.
+        Horizontal protected agriculture using rainwater and solar energy — comparable area‑efficiency to the Netherlands, at lower CAPEX/OPEX.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="InvestorDeck_Agrosaima_ConExport.docx" download>Download Investor Deck</a>
+        <a class="btn secondary" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section class="card kv">
+      <div>
+        <h2>About Us</h2>
+        <p>Agrosaima is a Colombian AgriFoodTech company with 10+ years of R&amp;D. We developed a <strong>production toolkit</strong> for the tropical highlands combining: tropical <strong>aeroponics (horizontal)</strong>, climate‑adapted <strong>macro‑tunnels</strong>, <strong>rainwater‑only irrigation</strong>, and <strong>solar‑powered pumping &amp; ventilation</strong>. Output: premium basil, herbs and microgreens with export‑grade consistency, safety and nutritional density.</p>
+        <div>
+          <span class="pill">Export</span>
+          <span class="pill">Climate‑Smart</span>
+          <span class="pill">Rain‑Fed</span>
+          <span class="pill">Solar‑Powered</span>
+          <span class="pill">Traceable</span>
+        </div>
+      </div>
+      <div class="imgwrap">
+        <img src="agrosaima-invernadero.jpg" alt="Agrosaima protected agriculture in Colombia" />
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Value Proposition</h2>
+      <div class="grid two">
+        <div>
+          <ul>
+            <li>Consistent quality, quantity &amp; compliance → export contracts.</li>
+            <li>Nutrient‑dense, pesticide‑free fresh produce.</li>
+            <li>Area efficiency comparable to NL greenhouses — without vertical farming.</li>
+            <li>Modular replication across Colombia’s coffee region.</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><strong>Water</strong>: &gt;90% savings vs. soil (rainwater only).</li>
+            <li><strong>Energy</strong>: solar pumping &amp; ventilation → near‑zero OPEX.</li>
+            <li><strong>Traceability</strong>: export‑ready protocols (GlobalG.A.P./USDA Organic in process).</li>
+            <li><strong>ESG</strong>: rural skilled jobs, conservation buffers.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Export Focus</h2>
+      <div class="grid two">
+        <div>
+          <p><strong>Target markets:</strong> USA (NY, FL, CA) and EU (NL, DE, ES). Premium importers of fresh basil, herbs and microgreens.</p>
+          <p><strong>Indicative FOB ranges:</strong> Basil US$8–12/kg · Microgreens US$25–40/kg · Mixed herbs US$10–15/kg.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Colombia (Agrosaima): rain + solar, low OPEX, replicable horizontal system.</li>
+            <li>Netherlands: high‑tech vertical greenhouses → higher CAPEX/OPEX.</li>
+            <li>Mexico: export leader with increasing water stress and pesticide restrictions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p><strong>CEO:</strong> Fernando Jaramillo</p>
+      <p><strong>Email:</strong> <a href="mailto:fjagrosaima@gmail.com">fjagrosaima@gmail.com</a></p>
+      <p><strong>Phone:</strong> +57 318 521 9116</p>
+      <p><strong>HQ:</strong> Chía, Cundinamarca, Colombia</p>
+      <p>
+        <a class="btn primary" href="InvestorDeck_Agrosaima_ConExport.docx" download>Download Investor Deck</a>
+      </p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Agrosaima SAS · Tropical Aeroponics Toolkit
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
